@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Siber Güvenlik Uzmanı Elgar Zeynalov'un resmi sitesi">
-    <title>Elgar Zeynalov - Siber Güvenlik Uzmanı</title>
+    <meta name="description" content="Elgar Zeynalov - Cyber Security Expert from Azerbaijan">
+    <title>Elgar Zeynalov - Cyber Security Expert</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
-            color: #ffffff;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #008C45;
             padding: 20px;
             text-align: center;
+            color: white;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            color: #00ff7f;
+            font-size: 3em;
         }
         nav {
             margin-top: 15px;
         }
         nav a {
-            margin: 0 15px;
-            color: #00ff7f;
+            margin: 0 20px;
+            color: white;
             text-decoration: none;
             font-size: 1.2em;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
         section {
-            padding: 20px;
+            padding: 40px;
             text-align: center;
         }
         .container {
@@ -41,26 +44,49 @@
             margin: 0 auto;
         }
         h2 {
-            color: #00ff7f;
-        }
-        footer {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-            color: #ffffff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            color: #008C45;
         }
         .about {
-            background-color: #222;
+            background-color: #eef2f3;
             padding: 50px;
             border-radius: 10px;
             margin-top: 30px;
         }
         .about p {
             font-size: 1.2em;
-            line-height: 1.6;
+            line-height: 1.8;
+            color: #555;
+        }
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects li {
+            background-color: #008C45;
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .flag {
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .flag img {
+            width: 100px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -68,39 +94,42 @@
 
     <header>
         <h1>Elgar Zeynalov</h1>
+        <p>Cyber Security Expert from Azerbaijan</p>
         <nav>
-            <a href="#about">Hakkımda</a>
-            <a href="#projects">Projeler</a>
-            <a href="#contact">İletişim</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <div class="flag">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg" alt="Azerbaijan Flag">
+        </div>
     </header>
 
     <section class="container">
         <div id="about" class="about">
-            <h2>Hakkımda</h2>
-            <p>Ben Elgar Zeynalov, Osmangazi Üniversitesi'nde siber güvenlik üzerine eğitim gören bir öğrenciyim. 
-               Siber güvenlik alanında hem teorik hem de pratik bilgiye sahibim ve bu alandaki en yeni teknolojileri ve tehditleri yakından takip ediyorum.
-            </p>
+            <h2>About Me</h2>
+            <p>I am Elgar Zeynalov, a passionate Cyber Security Expert from Azerbaijan, currently pursuing my education at Osmangazi University. With a strong interest in cybersecurity, I have developed skills in analyzing network traffic, vulnerability assessment, and implementing effective defense strategies against cyber threats. My goal is to contribute to a safer digital environment.</p>
         </div>
 
-        <div id="projects">
-            <h2>Projelerim</h2>
-            <p>Siber güvenlik alanında yaptığım bazı projeler:</p>
+        <div id="projects" class="projects">
+            <h2>My Projects</h2>
+            <p>Here are some of the key projects I've worked on:</p>
             <ul>
-                <li>Saldırı Tespit Sistemleri (IDS)</li>
-                <li>Ağ Trafiği Analizi</li>
-                <li>Zafiyet Tarayıcıları ile Güvenlik Denetimleri</li>
+                <li>Intrusion Detection Systems (IDS) Development</li>
+                <li>Network Traffic Monitoring and Analysis</li>
+                <li>Penetration Testing and Vulnerability Scanning</li>
+                <li>Data Encryption and Secure Communication Protocols</li>
             </ul>
         </div>
 
         <div id="contact">
-            <h2>İletişim</h2>
-            <p>Bana <strong>elgarzeynalov@ogrenci.com</strong> adresinden ulaşabilirsiniz.</p>
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via email at <strong>elgarzeynalov@cybersecurity.com</strong></p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Elgar Zeynalov - Siber Güvenlik Uzmanı</p>
+        <p>&copy; 2024 Elgar Zeynalov | Cyber Security Expert</p>
     </footer>
 
 </body>
