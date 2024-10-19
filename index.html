@@ -15,7 +15,7 @@
             position: relative;
             background-color: #f4f4f4;
         }
-        /* Background with Azerbaijan flag */
+        /* Background with Azerbaijan flag - Less transparent */
         body::before {
             content: "";
             position: fixed;
@@ -26,7 +26,7 @@
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg');
             background-size: cover;
             background-position: center;
-            opacity: 0.1;  /* Transparency for professional look */
+            opacity: 0.3;  /* Less transparency to make it more visible */
             z-index: -1;
             animation: wave 10s infinite linear;
         }
@@ -83,7 +83,7 @@
             margin-bottom: 20px;
         }
         .about, .projects {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 50px;
             border-radius: 10px;
             margin-top: 30px;
@@ -105,6 +105,10 @@
             margin: 10px 0;
             border-radius: 5px;
             font-size: 1.1em;
+        }
+        .projects li.soon {
+            background-color: #ff9900;
+            color: white;
         }
         footer {
             background-color: #333;
@@ -156,16 +160,13 @@
             <h2>My Projects</h2>
             <p>Here are some of the key projects I've worked on:</p>
             <ul>
-                <li>Intrusion Detection Systems (IDS) Development</li>
-                <li>Network Traffic Monitoring and Analysis</li>
-                <li>Penetration Testing and Vulnerability Scanning</li>
-                <li>Data Encryption and Secure Communication Protocols</li>
+                <li class="soon">New projects coming soon...</li>
             </ul>
         </div>
 
         <div id="contact">
             <h2>Contact Me</h2>
-            <p>Feel free to reach out to me via email at <strong>elgarzeynalov@cybersecurity.com</strong></p>
+            <p>Feel free to reach out to me via email at <strong>zeynalovelgar@gmail.com</strong></p>
         </div>
     </section>
 
