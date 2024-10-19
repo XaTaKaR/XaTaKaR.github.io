@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elgar Zeynalov - Cyber Security Expert from Azerbaijan">
+    <title>Elgar Zeynalov - Cyber Security Expert</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+            background-color: #f4f4f4;
+        }
+        /* Background with Azerbaijan flag */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;  /* Transparency for professional look */
+            z-index: -1;
+            animation: wave 10s infinite linear;
+        }
 
+        @keyframes wave {
+            0% { background-position: 0 0; }
+            100% { background-position: 1000px 0; }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 3px;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #00cc99;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #008C45;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .about, .projects {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+        }
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects li {
+            background-color: #008C45;
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            .about, .projects {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Elgar Zeynalov</h1>
+        <p>Cyber Security Expert from Azerbaijan</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div id="about" class="about">
+            <h2>About Me</h2>
+            <p>I am Elgar Zeynalov, a passionate Cyber Security Expert from Azerbaijan, currently pursuing my education at Osmangazi University. 
+            I specialize in network security, vulnerability assessments, and data protection. With a deep understanding of the latest cybersecurity threats, I work to develop innovative solutions for a safer digital world.</p>
+        </div>
+
+        <div id="projects" class="projects">
+            <h2>My Projects</h2>
+            <p>Here are some of the key projects I've worked on:</p>
+            <ul>
+                <li>Intrusion Detection Systems (IDS) Development</li>
+                <li>Network Traffic Monitoring and Analysis</li>
+                <li>Penetration Testing and Vulnerability Scanning</li>
+                <li>Data Encryption and Secure Communication Protocols</li>
+            </ul>
+        </div>
+
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via email at <strong>elgarzeynalov@cybersecurity.com</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elgar Zeynalov | Cyber Security Expert</p>
+    </footer>
+
+</body>
+</html>
