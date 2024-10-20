@@ -25,7 +25,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9); /* Tam saydam siyah katman */
+            background: rgba(0, 0, 0, 0.9);
             z-index: 1;
             display: flex;
             justify-content: center;
@@ -58,7 +58,7 @@
         #details {
             padding: 30px;
             border-radius: 15px;
-            background: rgba(0, 0, 0, 0.7); /* Detaylar için hafif saydam bir arka plan */
+            background: rgba(0, 0, 0, 0.7);
             z-index: 2;
         }
 
@@ -85,7 +85,6 @@
             background-color: #009999;
         }
 
-        /* Siber güvenlik temalı arka plan */
         body::before {
             content: "";
             position: absolute;
@@ -93,52 +92,51 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg'); /* Siber güvenlik temalı arka plan */
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg');
             background-size: cover;
             background-position: center;
             z-index: 0;
-            filter: brightness(0.4); /* Arka plan daha koyu */
+            filter: brightness(0.4);
         }
 
-        /* Mobil uyumluluk için medya sorguları */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5em; /* Başlık mobil cihazlarda daha küçük */
+                font-size: 2.5em;
             }
 
             h2 {
-                font-size: 1.5em; /* Alt başlık mobilde küçültüldü */
+                font-size: 1.5em;
             }
 
             p {
-                font-size: 1em; /* Paragraf yazıları mobilde daha küçük */
+                font-size: 1em;
             }
 
             .button {
-                font-size: 1em; /* Butonlar mobilde küçüldü */
+                font-size: 1em;
                 padding: 8px 15px;
             }
 
             #details {
-                padding: 20px; /* İçerik mobilde küçüldü */
+                padding: 20px;
             }
         }
 
         @media (max-width: 480px) {
             h1 {
-                font-size: 2em; /* Küçük ekranlı telefonlar için başlık daha küçük */
+                font-size: 2em;
             }
 
             h2 {
-                font-size: 1.2em; /* Alt başlık daha da küçüldü */
+                font-size: 1.2em;
             }
 
             p {
-                font-size: 0.9em; /* Paragraflar küçük ekranlarda daha küçük */
+                font-size: 0.9em;
             }
 
             .button {
-                font-size: 0.9em; /* Buton boyutları küçük telefonlar için daha küçük */
+                font-size: 0.9em;
                 padding: 8px 12px;
             }
         }
@@ -152,17 +150,13 @@
             <p><strong>Age:</strong> 17</p>
             <p><strong>Studying:</strong> Mathematics and Computer Science at <span class="highlight">Osmangazi University</span></p>
             <p><strong>Country:</strong> <span class="highlight">Turkiye</span></p>
-            <p><strong>Passion:</strong> Cybersecurity, Problem Solving, and Technology</p>
-            <p>I'm an aspiring cybersecurity expert with a deep interest in network security, ethical hacking, and cryptography. 
-               Currently pursuing my studies in Mathematics and Computer Science, I'm always eager to expand my knowledge and contribute to the cybersecurity community.</p>
-            
-            <!-- Social Media Section -->
+
             <div id="social-media">
                 <h2>Connect with me</h2>
                 <a href="https://www.instagram.com/zeynalovelgar" target="_blank" class="button">Instagram</a>
                 <a href="mailto:zeynalovelgar@gmail.com" class="button">Email Me</a>
                 <a href="https://www.linkedin.com/in/elgar-zeynalov-788691330/" target="_blank" class="button">LinkedIn</a>
-                <a href="https://github.com/WodenN1/" target="_blank" class="button">GitHub</a>
+                <a href="https://github.com/WodenN1" target="_blank" class="button">GitHub</a>
             </div>
         </div>
     </div>
