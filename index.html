@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elgar(WodenN1) Zeynalov</title>
+    <title>Elgar Zeynalov - Cybersecurity Professional</title>
     <style>
         body {
             margin: 0;
@@ -28,6 +28,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 20px; /* Mobilde içerik kenarlara yaslanmasın diye padding eklendi */
         }
 
         h1 {
@@ -56,6 +57,7 @@
         #details {
             padding: 30px;
             border-radius: 15px;
+            background: rgba(0, 0, 0, 0.7); /* Detayların daha belirgin olması için arka plan eklendi */
         }
 
         #social-media {
@@ -93,7 +95,50 @@
             background-size: cover;
             background-position: center;
             z-index: 0;
-            filter: brightness(0.6); /* Renkler daha koyu, profesyonel görünsün diye */
+            filter: brightness(0.6); /* Arka planın görünürlüğünü dengelemek için */
+        }
+
+        /* Mobil uyumluluk için medya sorguları */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Başlık mobil cihazlarda daha küçük */
+            }
+
+            h2 {
+                font-size: 1.5em; /* Alt başlık da mobilde küçültüldü */
+            }
+
+            p {
+                font-size: 1em; /* Paragraf yazıları daha küçük */
+            }
+
+            .button {
+                font-size: 1em; /* Butonların boyutu mobilde daha küçük */
+                padding: 8px 15px;
+            }
+
+            #details {
+                padding: 20px; /* Mobilde içerik daha küçük */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em; /* Küçük ekranlı telefonlar için başlık daha da küçültüldü */
+            }
+
+            h2 {
+                font-size: 1.2em; /* Alt başlık daha da küçüldü */
+            }
+
+            p {
+                font-size: 0.9em; /* Paragraflar küçük telefonlarda optimize edildi */
+            }
+
+            .button {
+                font-size: 0.9em; /* Buton boyutları mobilde daha küçük */
+                padding: 8px 12px;
+            }
         }
     </style>
 </head>
@@ -113,9 +158,9 @@
             <div id="social-media">
                 <h2>Connect with me</h2>
                 <a href="https://www.instagram.com/zeynalovelgar" target="_blank" class="button">Instagram</a>
-                <a href="mailto:zeynalovelgar@gmail.com" class="button">Email Me</a>
-                <a href="https://www.linkedin.com/in/elgar-zeynalov-788691330/" target="_blank" class="button">LinkedIn</a> <!-- Replace with your LinkedIn URL -->
-                <a href="https://github.com/WodenN1/" target="_blank" class="button">GitHub</a> <!-- Replace with your GitHub URL -->
+                <a href="mailto:your-email@example.com" class="button">Email Me</a>
+                <a href="https://www.linkedin.com" target="_blank" class="button">LinkedIn</a> <!-- Replace with your LinkedIn URL -->
+                <a href="https://github.com" target="_blank" class="button">GitHub</a> <!-- Replace with your GitHub URL -->
             </div>
         </div>
     </div>
