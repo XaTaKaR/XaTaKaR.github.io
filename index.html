@@ -4,54 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elgar Zeynalov - Cybersecurity Professional</title>
+    <title>Elgar(WodenN1) Zeynalov</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
             background-color: #121212;
             overflow: hidden;
         }
 
-        #container {
-            position: relative;
-            text-align: center;
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8); /* Saydam Siyah Kısım Tüm Sayfayı Kaplıyor */
             z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 2em;
             font-weight: normal;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         p {
             font-size: 1.2em;
             margin-bottom: 15px;
-        }
-
-        #flag {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: 1;
-            opacity: 0.2;
+            line-height: 1.5;
         }
 
         .highlight {
@@ -59,16 +54,34 @@
         }
 
         #details {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
+            padding: 30px;
+            border-radius: 15px;
         }
 
-        @keyframes wave {
-            0% { background-position: 0% 0%; }
-            100% { background-position: 100% 0%; }
+        #social-media {
+            margin-top: 20px;
         }
 
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+            background-color: #00ffcc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: #009999;
+        }
+
+        /* Siber güvenlik temalı arka plan */
         body::before {
             content: "";
             position: absolute;
@@ -76,22 +89,34 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg');
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg'); /* Siber Güvenlik Temalı Arka Plan */
             background-size: cover;
+            background-position: center;
             z-index: 0;
-            animation: wave 10s linear infinite;
+            filter: brightness(0.6); /* Renkler daha koyu, profesyonel görünsün diye */
         }
     </style>
 </head>
 <body>
-    <div id="container">
+    <div id="overlay">
         <div id="details">
             <h1>Elgar Zeynalov</h1>
-            <h2 class="highlight">Cybersecurity Professional</h2>
-            <p>Age: 17</p>
-            <p>Studying <span class="highlight">Mathematics and Computer Science</span> at <span class="highlight">Osmangazi University</span>.</p>
-            <p>From <span class="highlight">Azerbaijan</span>.</p>
-            <p>Passionate about <span class="highlight">Cybersecurity</span> and technology.</p>
+            <h2 class="highlight">Cybersecurity Specialist</h2>
+            <p><strong>Age:</strong> 17</p>
+            <p><strong>Studying:</strong> Mathematics and Computer Science at <span class="highlight">Osmangazi University</span></p>
+            <p><strong>Country:</strong> <span class="highlight">Turkiye</span></p>
+            <p><strong>Passion:</strong> Cybersecurity, Problem Solving, and Technology</p>
+            <p>I'm an aspiring cybersecurity expert with a deep interest in network security, ethical hacking, and cryptography. 
+               Currently pursuing my studies in Mathematics and Computer Science, I'm always eager to expand my knowledge and contribute to the cybersecurity community.</p>
+            
+            <!-- Social Media Section -->
+            <div id="social-media">
+                <h2>Connect with me</h2>
+                <a href="https://www.instagram.com/zeynalovelgar" target="_blank" class="button">Instagram</a>
+                <a href="mailto:zeynalovelgar@gmail.com" class="button">Email Me</a>
+                <a href="https://www.linkedin.com/in/elgar-zeynalov-788691330/" target="_blank" class="button">LinkedIn</a> <!-- Replace with your LinkedIn URL -->
+                <a href="https://github.com/WodenN1/" target="_blank" class="button">GitHub</a> <!-- Replace with your GitHub URL -->
+            </div>
         </div>
     </div>
 </body>
