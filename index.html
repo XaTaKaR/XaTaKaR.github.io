@@ -22,13 +22,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8); /* Saydam Siyah Kısım Tüm Sayfayı Kaplıyor */
+            background: rgba(0, 0, 0, 0.6); /* Daha saydam siyah arka plan */
             z-index: 2;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 20px; /* Mobilde içerik kenarlara yaslanmasın diye padding eklendi */
+            padding: 20px; /* Mobil uyumluluk için kenarlıklar */
         }
 
         h1 {
@@ -57,7 +57,7 @@
         #details {
             padding: 30px;
             border-radius: 15px;
-            background: rgba(0, 0, 0, 0.7); /* Detayların daha belirgin olması için arka plan eklendi */
+            background: rgba(0, 0, 0, 0.5); /* Detaylar için hafif saydam bir arka plan */
         }
 
         #social-media {
@@ -91,11 +91,11 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg'); /* Siber Güvenlik Temalı Arka Plan */
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg'); /* Siber güvenlik temalı arka plan */
             background-size: cover;
             background-position: center;
             z-index: 0;
-            filter: brightness(0.6); /* Arka planın görünürlüğünü dengelemek için */
+            filter: brightness(0.6); /* Arka plan daha koyu */
         }
 
         /* Mobil uyumluluk için medya sorguları */
@@ -105,26 +105,26 @@
             }
 
             h2 {
-                font-size: 1.5em; /* Alt başlık da mobilde küçültüldü */
+                font-size: 1.5em; /* Alt başlık mobilde küçültüldü */
             }
 
             p {
-                font-size: 1em; /* Paragraf yazıları daha küçük */
+                font-size: 1em; /* Paragraf yazıları mobilde daha küçük */
             }
 
             .button {
-                font-size: 1em; /* Butonların boyutu mobilde daha küçük */
+                font-size: 1em; /* Butonlar mobilde küçüldü */
                 padding: 8px 15px;
             }
 
             #details {
-                padding: 20px; /* Mobilde içerik daha küçük */
+                padding: 20px; /* İçerik mobilde küçüldü */
             }
         }
 
         @media (max-width: 480px) {
             h1 {
-                font-size: 2em; /* Küçük ekranlı telefonlar için başlık daha da küçültüldü */
+                font-size: 2em; /* Küçük ekranlı telefonlar için başlık daha küçük */
             }
 
             h2 {
@@ -132,11 +132,11 @@
             }
 
             p {
-                font-size: 0.9em; /* Paragraflar küçük telefonlarda optimize edildi */
+                font-size: 0.9em; /* Paragraflar küçük ekranlarda daha küçük */
             }
 
             .button {
-                font-size: 0.9em; /* Buton boyutları mobilde daha küçük */
+                font-size: 0.9em; /* Buton boyutları küçük telefonlar için daha küçük */
                 padding: 8px 12px;
             }
         }
@@ -149,7 +149,7 @@
             <h2 class="highlight">Cybersecurity Specialist</h2>
             <p><strong>Age:</strong> 17</p>
             <p><strong>Studying:</strong> Mathematics and Computer Science at <span class="highlight">Osmangazi University</span></p>
-            <p><strong>Country:</strong> <span class="highlight">Turkiye</span></p>
+            <p><strong>Country:</strong> <span class="highlight">Turkey</span></p> <!-- Ülke değiştirildi -->
             <p><strong>Passion:</strong> Cybersecurity, Problem Solving, and Technology</p>
             <p>I'm an aspiring cybersecurity expert with a deep interest in network security, ethical hacking, and cryptography. 
                Currently pursuing my studies in Mathematics and Computer Science, I'm always eager to expand my knowledge and contribute to the cybersecurity community.</p>
@@ -159,8 +159,8 @@
                 <h2>Connect with me</h2>
                 <a href="https://www.instagram.com/zeynalovelgar" target="_blank" class="button">Instagram</a>
                 <a href="mailto:your-email@example.com" class="button">Email Me</a>
-                <a href="https://www.linkedin.com" target="_blank" class="button">LinkedIn</a> <!-- Replace with your LinkedIn URL -->
-                <a href="https://github.com" target="_blank" class="button">GitHub</a> <!-- Replace with your GitHub URL -->
+                <a href="https://www.linkedin.com" target="_blank" class="button">LinkedIn</a> <!-- LinkedIn URL'nizi buraya ekleyin -->
+                <a href="https://github.com" target="_blank" class="button">GitHub</a> <!-- GitHub URL'nizi buraya ekleyin -->
             </div>
         </div>
     </div>
